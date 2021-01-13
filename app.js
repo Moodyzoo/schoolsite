@@ -6,4 +6,8 @@ res.send("Hallo en welkom op de schoolsite")
 
 });
 
-app.listen("80")
+app.listen(process.env.PORT, () => {
+
+console.log("Site is online")
+
+})
